@@ -2,5 +2,8 @@
   "name": "mern-blog-app",
   "version": "1.0.0",
   "main": "server.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^5.2.0"
+  }
 }
