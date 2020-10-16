@@ -5,7 +5,7 @@ import logo from '../../n.png';
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <nav className="navbar navbar-expand-lg navbar-light px-5 py-0">
+      <nav className="navbar navbar-expand-lg navbar-dark px-5 py-0">
         <a className="navbar-brand" href="#">
           <img style={{ width: '50px' }} src={logo} alt="logo" />
         </a>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                Add Article
               </a>
             </li>
           </ul>

@@ -12,16 +12,16 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 
-mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
-connection.once('open', () =>  {
-    console.log('MongoDB connection established successfully');
-})
+connection.once('open', () => {
+  console.log('MongoDB connection established successfully');
+});
 
 const articlesRouter = require('./routes/articles');
 app.use('/articles', articlesRouter);
 
 app.listen(port, () => {
-    console.log(`Server started on Port: ${port}`);
-})
+  console.log(`Server started on Port: ${port}`);
+});
